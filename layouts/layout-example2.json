@@ -1,0 +1,22 @@
+{
+  "tabs": [
+    {
+      "TabTitle": "TEST",
+      "TabColor": "#FF000F",
+      "Cmd" : "tssh cds-poc-in",
+      "Panes": [
+        { "Vertical": true, "Size": 0.5, "Cmd": "tssh cds-poc-ex" },
+        { "MoveFocus": "left" },
+        { "Vertical": false, "Size": 0.5, "Cmd": "tssh cds-poc-in" },
+      ]
+    },
+    {
+      "TabTitle": "TEST CTRL",
+      "TabColor": "#008DF8",
+      "Cmd" : "tssh cds-poc-in",
+      "Panes": [
+        { "Vertical": true, "Size": 0.5, "Cmd": "tssh cds-poc-ex" },
+      ]
+    },
+  ]
+}

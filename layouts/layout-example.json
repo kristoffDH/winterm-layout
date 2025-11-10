@@ -1,0 +1,36 @@
+{
+  "tabs": [
+    {
+      "TabTitle": "CDS LOG",
+      "TabColor": "#FFB900",
+      "Cmd" : "tssh cds-in-m2",
+      "Panes": [
+        { "Vertical": false, "Size": 0.5, "Cmd": "tssh cds-in-m1" },
+        { "MoveFocus": "left" },
+        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m1" },        
+        { "MoveFocus": "up" },
+        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m2" }
+      ]
+    },
+    {
+      "TabTitle": "CDS CTRL",
+      "TabColor": "#1A921C",
+      "Cmd" : "tssh cds-in-m2",
+      "Panes": [
+        { "Vertical": false, "Size": 0.5, "Cmd": "tssh cds-in-m1" },
+        { "MoveFocus": "left" },
+        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m1" },        
+        { "MoveFocus": "up" },
+        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m2" }
+      ]
+    },
+    {
+      "TabTitle": "CDS M1",
+      "TabColor": "#1A921C",
+      "Cmd" : "tssh cds-in-m1",
+      "Panes": [
+        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m1" },        
+      ]
+    },
+  ]
+}
