@@ -1,36 +1,22 @@
 {
   "tabs": [
     {
-      "TabTitle": "CDS LOG",
-      "TabColor": "#FFB900",
-      "Cmd" : "tssh cds-in-m2",
+      "TabTitle": "TEST",
+      "TabColor": "#FF000F",
       "Panes": [
-        { "Vertical": false, "Size": 0.5, "Cmd": "tssh cds-in-m1" },
+        { "main": true, "Vars": { "sshdst": "test-in" }, "Cmd": "tssh $sshdst" },
+        { "Vertical": true, "Size": 0.5, "Vars": { "sshdst": "test-ex" }, "Cmd": "tssh $sshdst" },
         { "MoveFocus": "left" },
-        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m1" },        
-        { "MoveFocus": "up" },
-        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m2" }
+        { "Vertical": false, "Size": 0.5, "Vars": { "sshdst": "test-in" }, "Cmd": "tssh $sshdst" }
       ]
     },
     {
-      "TabTitle": "CDS CTRL",
-      "TabColor": "#1A921C",
-      "Cmd" : "tssh cds-in-m2",
+      "TabTitle": "TEST CTRL",
+      "TabColor": "#008DF8",
       "Panes": [
-        { "Vertical": false, "Size": 0.5, "Cmd": "tssh cds-in-m1" },
-        { "MoveFocus": "left" },
-        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m1" },        
-        { "MoveFocus": "up" },
-        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m2" }
+        { "main": true, "Vars": { "sshdst": "test-in" }, "Cmd": "tssh $sshdst" },
+        { "Vertical": true, "Size": 0.5, "Vars": { "sshdst": "test-ex" }, "Cmd": "tssh $sshdst" }
       ]
-    },
-    {
-      "TabTitle": "CDS M1",
-      "TabColor": "#1A921C",
-      "Cmd" : "tssh cds-in-m1",
-      "Panes": [
-        { "Vertical": true,  "Size": 0.5, "Cmd": "tssh cds-ex-m1" },        
-      ]
-    },
+    }
   ]
 }
